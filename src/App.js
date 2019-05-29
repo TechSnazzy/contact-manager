@@ -3,6 +3,11 @@ import Contact from './components/Contact';
 import Header from './components/Header';
 import './App.css';
 
+/*
+Pass in the properties
+to the Header and Contact components.
+*/
+
 class App extends Component {
   render() {
     return (
