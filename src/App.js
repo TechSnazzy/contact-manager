@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import Contact from './components/Contact';
 import Header from './components/Header';
+
+/*
+To install bootstrap: npm install bootstrap
+*/
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 /*
