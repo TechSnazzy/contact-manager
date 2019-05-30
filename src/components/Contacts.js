@@ -70,9 +70,14 @@ class Contacts extends Component {
         {contacts.map(contact => (
           <Contact
             key={contact.id}
-            name={contact.name}
-            email={contact.email}
-            phone={contact.phone}
+            // name={contact.name}
+            // email={contact.email}
+            // phone={contact.phone}
+            contact={contact}
+            /*
+            But instead of passing in each individual contact
+            I can just pass in the contact.
+            */
           />
         ))}
       </div>

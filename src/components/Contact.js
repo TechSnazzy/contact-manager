@@ -29,7 +29,7 @@ class Contact extends Component {
     use {name}, {email}, {phone} instead.
     */
 
-    const { name, email, phone } = this.props;
+    const { name, email, phone } = this.props.contact;
 
     return (
       <div className="card card-body mp-3">
@@ -44,9 +44,7 @@ class Contact extends Component {
 }
 
 Contact.propTypes = {
-  name: PropTypes.string.isRequired,
-  email: PropTypes.string.isRequired,
-  phone: PropTypes.string.isRequired
+  contact: PropTypes.object.isRequired
 };
 
 export default Contact;
