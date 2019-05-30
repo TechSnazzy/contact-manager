@@ -32,6 +32,7 @@ Header.defaultProps = {
 /*
 Check for bugs and validation by using PropTypes.
 */
+
 Header.propTypes = {
   branding: PropTypes.string.isRequired
 };
