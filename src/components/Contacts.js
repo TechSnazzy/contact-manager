@@ -7,36 +7,51 @@ Step 4: Import the Contact component.
 import Contact from './Contact';
 
 class Contacts extends Component {
-  constructor() {
+  /*
+  The longer way to create this is like this...
+
+  constructer() {
     super();
     this.state = {
-      /*
+      contacts: [...]
+    }
+  }
+
+  But I shortened it to this...
+
+  state = {
+    contacts: [...]
+  }
+  */
+
+  state = {
+    /*
       Step 1:
       We have state that holds a key of contacts
       and the value is an array of objects.
       */
-      contacts: [
-        {
-          id: 1,
-          name: 'John Doe',
-          email: 'johndoe@gmail.com',
-          phone: '555-555-5555'
-        },
-        {
-          id: 2,
-          name: 'Karen Williams',
-          email: 'karenwilliams@gmail.com',
-          phone: '333-333-3333'
-        },
-        {
-          id: 3,
-          name: 'Henry Johnson',
-          email: 'henryjohnson@gmail.com',
-          phone: '111-111-1111'
-        }
-      ]
-    };
-  }
+    contacts: [
+      {
+        id: 1,
+        name: 'John Doe',
+        email: 'johndoe@gmail.com',
+        phone: '555-555-5555'
+      },
+      {
+        id: 2,
+        name: 'Karen Williams',
+        email: 'karenwilliams@gmail.com',
+        phone: '333-333-3333'
+      },
+      {
+        id: 3,
+        name: 'Henry Johnson',
+        email: 'henryjohnson@gmail.com',
+        phone: '111-111-1111'
+      }
+    ]
+  };
+
   render() {
     /*
     Step 2: Pulling the contacts out of the state
